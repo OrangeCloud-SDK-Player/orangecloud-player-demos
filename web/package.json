@@ -1,17 +1,16 @@
 {
   "name": "@orangecloud/player-demo",
   "version": "1.0.0",
+  "description": "OrangeCloud Player SDK Web Demo",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "vite build"
   },
   "dependencies": {
-    "@orangecloud/player-client": "workspace:*"
+    "@orangecloud/player-client": "git+https://github.com/OrangeCloud-SDK-Player/orangecloud-player-web.git#v1.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.3.0",
     "vite": "^5.4.0"
   }
 }

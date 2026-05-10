@@ -1,3 +1,5 @@
+// 注意：请先从 https://github.com/OrangeCloud-SDK-Player/orangecloud-player-android 下载 AAR
+// 放入本项目 libs/ 目录后即可编译
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")

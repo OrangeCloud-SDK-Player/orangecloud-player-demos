@@ -3,15 +3,17 @@ import PackageDescription
 
 let package = Package(
     name: "OrangeCloudPlayerDemo",
-    platforms: [.iOS(.v16), .macOS(.v13)],
+    platforms: [.iOS(.v13), .macOS(.v10_15)],
     dependencies: [
-        .package(path: "../../ios/OrangeCloudPlayerClient"),
+        .package(url: "https://github.com/OrangeCloud-SDK-Player/orangecloud-player-ios.git", from: "1.0.0")
     ],
     targets: [
         .executableTarget(
             name: "OrangeCloudPlayerDemo",
-            dependencies: ["OrangeCloudPlayerClient"],
+            dependencies: [
+                .product(name: "OrangeCloudPlayerClient", package: "orangecloud-player-ios")
+            ],
             path: "Sources"
-        ),
+        )
     ]
 )

@@ -1,5 +1,5 @@
 name: orangecloud_player_demo
-description: OrangeCloud Advanced Video Player SDK Flutter Demo
+description: OrangeCloud Player SDK Flutter Demo
 publish_to: 'none'
 version: 1.0.0
 
@@ -11,7 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
   orangecloud_player_client:
-    path: ../../../flutter/orangecloud_player_client
+    git:
+      url: https://github.com/OrangeCloud-SDK-Player/orangecloud-player-flutter.git
+      ref: v1.0.0
 
 dev_dependencies:
   flutter_test:
